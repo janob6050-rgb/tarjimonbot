@@ -13,7 +13,7 @@ bot = telebot.TeleBot(TOKEN)
 app = Flask(__name__) # Tuzatildi: name (2 ta pastki chiziq)
 
 # Sizning Telegram ID raqamingiz (O'zingiznikini yozing)
-MY_ID = 605012345 
+MY_ID = 7696146906 
 
 # 2. Flask server (Render uchun)
 @app.route('/')
