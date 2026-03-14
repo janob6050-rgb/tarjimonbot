@@ -10,7 +10,7 @@ import time
 # Render sozlamalaridan tokenni o'qiydi (Xavfsizlik uchun)
 TOKEN = os.environ.get('BOT_TOKEN', "8711550356:AAHzbpA0MQYfqemkwj8BsgMS6e0KRXMe8jo")
 bot = telebot.TeleBot(TOKEN)
-app = Flask(name) # Tuzatildi: name (2 ta pastki chiziq)
+app = Flask(__name__) # Tuzatildi: name (2 ta pastki chiziq)
 
 # Sizning Telegram ID raqamingiz (O'zingiznikini yozing)
 MY_ID = 605012345 
@@ -63,7 +63,7 @@ def translate(call):
         bot.send_message(call.message.chat.id, "❌ Matn topilmadi.")
 
 # 5. Ishga tushirish qismi
-if name == "main": # Tuzatildi: name == "main"
+if __name__== "__main__": # Tuzatildi: name == "main"
     # Har 10 minutlik eslatmani ishga tushirish
     threading.Thread(target=send_periodic_messages, daemon=True).start()
     
