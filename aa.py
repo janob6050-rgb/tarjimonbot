@@ -2,7 +2,7 @@ import telebot
 from deep_translator import GoogleTranslator
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-TOKEN = "BOT_TOKEN"
+TOKEN = "8711550356:AAHzbpA0MQYfqemkwj8BsgMS6e0KRXMe8jo"
 bot = telebot.TeleBot(TOKEN)
 
 user_text = {}
