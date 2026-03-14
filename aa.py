@@ -63,8 +63,7 @@ def translate(call):
         bot.send_message(call.message.chat.id, "❌ Matn topilmadi.")
 
 # 5. Ishga tushirish qismi
-if __name__ == "__main__": # Tuzatildi: name == "main"
-    # Har 10 minutlik eslatmani ishga tushirish
+if __name__ == "__main__":
     threading.Thread(target=send_periodic_messages, daemon=True).start()
     
     # Botning pooling qismini alohida thread'da ishga tushirish
